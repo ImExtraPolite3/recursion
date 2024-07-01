@@ -14,4 +14,29 @@ function loopFib(n) {
   return array;
 }
 
-console.log(loopFib(8));
+function recursionFib(n) {
+  let array = [];
+  let sum = 0;
+ 
+  if (n == 0) {
+    return 0;
+  } else if (n == 1) {  
+    return 1;
+  } else {
+    array.push((recursionFib(recursionFib(n - 2)) + recursionFib(n - 1)));
+  }
+
+  return array;
+}
+
+
+    
+   
+   
+
+
+
+
+
+console.log(recursionFib(4));
+// console.log((3));
