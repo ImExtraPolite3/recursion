@@ -14,6 +14,14 @@ function power(x, n) {
   }
 }
 
+function factorial(n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
 function loopFib(n) {
   let num1 = 0;
   let num2 = 1;
@@ -45,4 +53,4 @@ function recursionFib(n) {
   return array;
 }
 
-console.log(power(2, 4));
+console.log(factorial(5));
