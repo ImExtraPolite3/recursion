@@ -1,3 +1,19 @@
+function sumRange(n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n + sumRange(n - 1);
+  }
+}
+
+function power(x, n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return x * power(x, n - 1);
+  }
+}
+
 function loopFib(n) {
   let num1 = 0;
   let num2 = 1;
@@ -29,12 +45,4 @@ function recursionFib(n) {
   return array;
 }
 
-function sumRange(n) {
-  if (n == 1) {
-    return 1;
-  } else {
-    return n + sumRange(n - 1);
-  }
-}
-
-console.log(sumRange(4));
+console.log(power(2, 4));
