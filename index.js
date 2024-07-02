@@ -29,14 +29,12 @@ function recursionFib(n) {
   return array;
 }
 
+function sumRange(n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n + sumRange(n - 1);
+  }
+}
 
-    
-   
-   
-
-
-
-
-
-console.log(recursionFib(4));
-// console.log((3));
+console.log(sumRange(4));
